@@ -21,7 +21,7 @@ const App = () => {
 
     // Fetch expense record
     const fetchBudgets = async () => {
-        const res = await fetch('http://localhost:5000/budgets')
+        const res = await fetch('http://localhost:3000/budgets')
         const data = await res.json()
 
         return data
@@ -29,14 +29,14 @@ const App = () => {
 
     // Fetch expense record
     const fetchBudget = async (id) => {
-        const res = await fetch(`http://localhost:5000/budgets/${id}`)
+        const res = await fetch(`http://localhost:3000/budgets/${id}`)
         const data = await res.json()
         return data
     }
 
     // Add expense record 
     const addBudget = async (budget) => {
-        const res = await fetch('http://localhost:5000/budgets', {
+        const res = await fetch('http://localhost:3000/budgets', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -50,7 +50,7 @@ const App = () => {
     // Delete expense record
  
     const deleteBudget = async (id) => {
-        const res = await fetch(`http://localhost:5000/budgets/${id}`, {
+        const res = await fetch(`http://localhost:3000/budgets/${id}`, {
             method: 'DELETE',
         })
         //We should control the response status to decide if we will change the state or not.
@@ -65,7 +65,7 @@ const App = () => {
         const budgetToToggle = await fetchBudget(id)
         const updateBudget = {...budgetToToggle, ispaidout: !budgetToToggle.ispaidout}
 
-        const res = await fetch(`http://localhost:5000/budgets/${id}`, {
+        const res = await fetch(`http://localhost:3000/budgets/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json',
