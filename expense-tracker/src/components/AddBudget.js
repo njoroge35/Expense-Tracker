@@ -35,7 +35,7 @@ const AddBudget = ({ onAdd }) => {
  
     <form className='add-form' onSubmit={onSubmit}>
       <div className='form-control'>
-        <label>Petty Cash Name</label>
+        <label>Item Name</label>
         <input
           type='text'
           placeholder='Item name'

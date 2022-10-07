@@ -1,11 +1,3 @@
 {
-  "budgets": [
-    {
-      "name": "food",
-      "amount": "2000",
-      "exptype": "Miscallenous",
-      "ispaidout": true,
-      "id": 1
-    }
-  ]
+  "budgets": []
 }
