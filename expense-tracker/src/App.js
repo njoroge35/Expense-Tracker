@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Budgets from './components/Budgets'
 import AddBudget from './components/AddBudget'
-import About from './components/About'
+
 
 const App = () => {
 
@@ -19,7 +19,7 @@ const App = () => {
         getBudgets()
     }, [])
 
-    // Fetch Petty cash records 
+    // Fetch expense record
     const fetchBudgets = async () => {
         const res = await fetch('http://localhost:5000/budgets')
         const data = await res.json()
@@ -27,14 +27,14 @@ const App = () => {
         return data
     }
 
-    // Fetch Petty cash records 
+    // Fetch expense record
     const fetchBudget = async (id) => {
         const res = await fetch(`http://localhost:5000/budgets/${id}`)
         const data = await res.json()
         return data
     }
 
-    // Add Petty cash records 
+    // Add expense record 
     const addBudget = async (budget) => {
         const res = await fetch('http://localhost:5000/budgets', {
             method: 'POST',
@@ -47,7 +47,7 @@ const App = () => {
         setBudgets([...budgets, data])
     }
 
-    // Delete Petty cash record
+    // Delete expense record
  
     const deleteBudget = async (id) => {
         const res = await fetch(`http://localhost:5000/budgets/${id}`, {
@@ -56,7 +56,7 @@ const App = () => {
         //We should control the response status to decide if we will change the state or not.
         res.status === 200
             ? setBudgets(budgets.filter((budget) => budget.id !== id))
-            : alert('Error Deleting This petty cash record')
+            : alert('Error Deleting This expense')
     }
 
 
@@ -103,12 +103,12 @@ const App = () => {
 
                                 />
                             ) : (
-                                'No petty cash records found '
+                                'No expenditure found '
                             )}
                         </>
                     )}
                 />
-                <Route path='/about' component={About}/>
+                
                 <Footer/>
             </div>
         </Router>
