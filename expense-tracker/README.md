@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+## Petty Cash Register
+This project consist of 5 modules namely:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```Header :```
+- Displays project title and navigation buttons menu.
 
-## Available Scripts
+```Footer :```
+- Holds project footer information
 
-In the project directory, you can run:
+```About :```
+- Consist of  project details.
 
-### `npm start`
+```AddBudget :```
+- The AddBudget Component allows you to add petty cash item to the data source. The record will then immediately be updated in the system and make it visible.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- It also displays an error when no petty cash item add record fails.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- It otherwise takes the value that has been inputted and adds it to the others held at the data source. The addition takes place when the submit button is pressed.
 
-### `npm test`
+- It allows one to either set the pais out  status or for a record.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The application will then reload automatically on the added list
 
-### `npm run build`
+```Budget :```
+- The Budget Component enables you to interact with a particular petty cash item in the server displayed on the screen. One can delete a petty cash item or toggle its paid out state.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```Budgets :```
+- Displays the items in the list of the petty cash register.
+it add 
+- Allows deletion of the items from the list, and from the data source.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- It allows one to use a toggle function to set the paid out status yes or no.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```Button :```
+- The Button Component adds a reusable button component for multiple click actions. For example, this button can open the Add form and Close the form.
 
-### `npm run eject`
+Doube clicking on the petty cash record will update its status as paid out or not paid out
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Screenshots###
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Homepage](images/homepage.png "Homepage")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![About Page](images/about.png "About page")
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Add record page](images/add-record.png "Add record page")
+![No Records Page](images/no-records-found.png "No Records Page")
 
-## Learn More
+![Final server product image](images/homepage.png "Full project image")
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Ouma Nyang - Moringa School Phase 2 Project 
