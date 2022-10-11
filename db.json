@@ -1,3 +1,20 @@
 {
-  "budgets": []
-}
+    "budgets": [
+        [
+            {
+              "name": "Clothes",
+              "amount": "1000",
+              "exptype": "Personal Use",
+              "ispaidout": true,
+              "id": 1
+            },
+            {
+              "name": "Food",
+              "amount": "3000",
+              "exptype": "Home ",
+              "ispaidout": true,
+              "id": 2
+            }
+          ]
+    ]
+  }
